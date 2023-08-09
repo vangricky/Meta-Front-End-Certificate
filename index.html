@@ -10,5 +10,60 @@
         <h2>Pasta Salad</h2>
         <p>Lettuce, vegtables and mozzarella.</p>
         <a href="location.html">Our Location</a>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+        <table>
+            <tr>
+                <th>Dish</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Falafel</td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>Pasta Salad</td>
+                <td>$12.00</td>
+            </tr>
+        </table>
+
+        <!-- forms -->
+        <form action="/registration" method="post">
+            <label for="username">Username</label><br>
+            <input type="text"  name="username" placeholder="Username">
+            <br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="submit" name="" id="">
+            <br>
+            <!-- checkbox -->
+            <input type="checkbox" name="dog" value="dog">
+            <label for="dog">I own a dog</label><br>
+            <input type="checkbox" name="cat" value="cat">
+            <label for="cat">I own a cat</label><br>
+            <!-- radio buttons -->
+            <input type="radio" name="right" value="right">
+            <label for="right">I am right-handed</label><br>
+            <input type="radio" name="left" value="left">
+            <label for="left">I am left-handed</label><br>
+            <!-- other inputs -->
+            <input type="number" name="age" placeholder="Number"><br>
+            <input type="emal" name="email" placeholder="Email Address"><br>
+            <input type="file" name="file"><br>
+            <!-- text area -->
+            <input type="text" name="username">
+            <textarea name="multiline" id="multiline" cols="30" rows="5"></textarea><br>
+            <select name="food">
+                <option value="chocolate">Chocolate</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="ice cream">Ice Cream</option>
+                
+            </select>
+        </form>
+        
     </body>
 </html>
