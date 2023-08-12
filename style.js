@@ -137,8 +137,19 @@
 
 // ARRAYS
 
-var train1 = ["wheat", "barley", "potato", "salt", "rocks"]
+// var train1 = ["wheat", "barley", "potato", "salt", "rocks"]
 
-for (var i = 0; i < train1.length; i++) {
-    console.log(train1[i])
+// for (var i = 0; i < train1.length; i++) {
+//     console.log(train1[i])
+// }
+
+//TRY CATCH THROW ERROR HANDLING
+
+try {
+    console.log(a + b)
+} catch (err) {
+    console.log(err)
+    console.log("There was an error.")
+    console.log("The error was saved in the error log.")
 }
+console.log("My program does not stop.")
