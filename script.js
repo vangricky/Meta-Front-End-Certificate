@@ -267,65 +267,79 @@
 // Object-Orientated Programming
 
 // example 1
-var purchase1 = {
-    shoes: 100,
-    stateTax: 1.2,
-    totalPrice: function() {
-        var calculation = this.shoes * this.stateTax;
-        console.log('Total Price:', calculation);
-    }
-}
+// var purchase1 = {
+//     shoes: 100,
+//     stateTax: 1.2,
+//     totalPrice: function() {
+//         var calculation = this.shoes * this.stateTax;
+//         console.log('Total Price:', calculation);
+//     }
+// }
 
-var purchase2 = {
-    shoes: 50,
-    stateTax: 1.2,
-    totalPrice: function() {
-        var calculation = this.shoes * this.stateTax;
-        console.log('Total Price:', calculation);
-    }
-}
+// var purchase2 = {
+//     shoes: 50,
+//     stateTax: 1.2,
+//     totalPrice: function() {
+//         var calculation = this.shoes * this.stateTax;
+//         console.log('Total Price:', calculation);
+//     }
+// }
 
-purchase1.totalPrice();
-purchase2.totalPrice();
+// purchase1.totalPrice();
+// purchase2.totalPrice();
 
 // 'this' means, THIS "object". above, we see that in purchase1 object, i used 'this'. It refers to THIS oject... so purchase1
 //it also makes coding faster because i can copy line 274-275 and use it in other objects.
 
 // functional programming
 
-var shoes = 100;
-var stateTax = 1.2;
+// var shoes = 100;
+// var stateTax = 1.2;
 
-function totalPrice(shoes,tax) {
-    return shoes * tax;
-}
+// function totalPrice(shoes,tax) {
+//     return shoes * tax;
+// }
 
-var toPay = totalPrice(shoes, stateTax);
-console.log(toPay);
+// var toPay = totalPrice(shoes, stateTax);
+// console.log(toPay);
 
 // Object-oriented programming
 
 // example 1
 
-var purchase1 = {
-    shoes: 100,
-    stateTax:  1.2,
-    totalPrice: function() {
-        var calculation = this.shoes * this.stateTax;
-        console.log('Total Price:', calculation);
+// var purchase1 = {
+//     shoes: 100,
+//     stateTax:  1.2,
+//     totalPrice: function() {
+//         var calculation = this.shoes * this.stateTax;
+//         console.log('Total Price:', calculation);
+//     }
+// }
+// purchase1.totalPrice()
+
+// // example 2
+
+// var purchase2 = {
+//     shoes: 50,
+//     stateTax: 1.2,
+//     totalPrice: function() {
+//         var calculation = this.shoes * this.stateTax;
+//         console.log('Total Price:', calculation);
+//     }
+// }
+
+// purchase2.totalPrice();
+
+// -------------------------------------------------------------------------------------
+
+// clases
+class car {
+    constructor(color, speed) {
+        this.color = color;
+        this.speed = speed;
+    }
+
+    turboOn() {
+        console.log("Turbo is on!")
     }
 }
-purchase1.totalPrice()
-
-// example 2
-
-var purchase2 = {
-    shoes: 50,
-    stateTax: 1.2,
-    totalPrice: function() {
-        var calculation = this.shoes * this.stateTax;
-        console.log('Total Price:', calculation);
-    }
-}
-
-purchase2.totalPrice();
