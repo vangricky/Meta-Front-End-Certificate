@@ -682,8 +682,8 @@
 //basically, just like Object.keys, this one is Object.values... will outout each value of a key in the Object.
 
 
-//Object.entries()
-//Object.entries example below
+// Object.entries()
+// Object.entries //example below
 // const car4 = {
 //     speed: 400,
 //     color: 'magenta'
@@ -745,24 +745,219 @@
 
 //ES6 Strings
 
-let noMultiLine = "No multi-line strings in ES6";
-console.log("Did you know? " + noMultiLine);
+// let noMultiLine = "No multi-line strings in ES6";
+// console.log("Did you know? " + noMultiLine);
 
 //ES6 Multi-line template literals
 
-let multiLine = `
-    Using ES6
-    backticks,
-    multi-line
-    strings are
-    possible!
-    `;
+// let multiLine = `
+//     Using ES6
+//     backticks,
+//     multi-line
+//     strings are
+//     possible!
+//     `;
 
-console.log(multiLine)
+// console.log(multiLine)
 
 //ES6 variable interpolation
 
-let first = `He said, "Don't you know? ES6, it's got some great features!`;
-let second = `"Wouldn't you want to learn more?", he asked.`
+// let first = `He said, "Don't you know? ES6, it's got some great features!`;
+// let second = `"Wouldn't you want to learn more?", he asked.`
 
-console.log(`${first} - and I got curious. ${second}`);
+// console.log(`${first} - and I got curious. ${second}`);
+
+
+// objects ,arrays , maps , sets
+
+//ojects
+
+// const car = {
+//     owner: 'John',
+//     color: 'red',
+
+//     engineOn: function() {
+//         console.log("engine is on")
+//     }
+// }
+//key, value pairs
+
+// arrays
+
+// var testArray = [0, 1, 2, 3, 4]
+
+// const grades = [75, 95, 90, 85, 80, 85];
+// let gradesSum = 0;
+
+// for (i = 0; i < grades.length; i++) {
+//     gradesSum += grades[i]
+// }
+// console.log(gradesSum / grades.length)
+
+// Map
+// key - value pairs
+
+// Set
+// const set = new Set()
+// const house1 = 'red';
+// const house2 = 'blue';
+// const house3 = 'red'
+
+// const houses = new Set()
+// houses.add(house1).add(house2).add(house3)
+// console.log(houses) //Set(2){'red', 'blue'}
+
+
+// MORE WITH ARRAYS - 3 METHODS ( forEach, filter, map)
+
+// the forEach() method:
+// const fruits = ['kiwi','mango','apple','pear'];
+// function appendIndex(fruit, index) {
+//     console.log(`${index}. ${fruit}`)
+// }
+// fruits.forEach(appendIndex);
+
+// const veggies = ['onion', 'garlic', 'potato'];
+// veggies.forEach( function(veggie, index) {
+//     console.log(`${index}. ${veggie}`);
+// });
+
+// THE filter() method
+
+// const nums = [0, 10, 20, 30, 40, 50];
+// nums.filter( function(num) {
+//     return num > 20;
+// })
+
+
+// THE map method (example below wont run)
+
+// [0,10,20,30,40,50].map( function(num) {
+//     return num / 10
+// })
+
+// WORKING with Objects in JavaScript
+//The example below demonstrates how to use the object data structure to complete a specific task. This task is to convert an object to an array:
+
+// const result = [];
+// const drone = {
+//     speed: 100,
+//     color: 'yellow'
+// }
+// const droneKeys = Object.keys(drone);
+// droneKeys.forEach( function(key) {
+//     result.push(key, drone[key])
+// })
+// console.log(result)
+
+// To make a new Map, you can use the Map constructor:
+// new Map():
+
+// examples:
+// let bestBoxers = new Map();
+// bestBoxers.set(1, "The Champion");
+// bestBoxers.set(2, "The Runner-up");
+// bestBoxers.set(3, "The third place");
+
+// console.log(bestBoxers);
+
+// console.log(bestBoxers.get(1))
+
+// To make a new Set, type ' new Set(); '
+
+// const repetitiveFruits = ['apple', 'pear', 'apple', 'pear', 'plum', 'apple'];
+// const uniqueFruits = new Set(repetitiveFruits);
+// console.log(uniqueFruits)
+
+// Spread Operator
+// Tool used to spread array items and join objects together
+
+//Three dots method
+
+// let top3 = [
+//     "The Colosseum",
+//     "Trevi Fountain",
+//     "The Vatican City"
+// ];
+
+// function showItinerary(place1, place2, place3) {
+//     console.log("Visit " + place1);
+//     console.log("Then visit " + place2);
+//     console.log("Finish with a visit to " + place3);
+// }
+
+// showItinerary()
+// showItinerary(top3[0], top3[1], top3[2])
+
+// BELOW, this method is called: spread operator (three dots)
+// showItinerary(...top3);
+
+// const top7 = [
+//     "The Colosseum",
+//     "The Roman Forum",
+//     "The Vatican",
+//     "Trevi Fountain",
+//     "The Pantheon",
+//     "Piazza Venezia",
+//     "The Palatine Hill"
+// ]
+
+// const [] = top7;
+// const [first, second, third, ...secondVisit] = top7;
+
+// function addTaxToPrices(taxRate, ...itemsBought) {
+//     return itemsBought.map(item => taxRate * item)
+// }
+// let shoppingCart = addTaxToPrices(1.1, 46, 89, 35, 79);
+// console.log(shoppingCart);
+
+// ADDING ARRAYS TO ARRAYS!!!
+// const fruits = ['apple', 'pear', 'plum']
+// const berries = ['blueberry', 'strawberry']
+// const fruitsAndBerries = [...fruits, ...berries] // concatenate
+// console.log(fruitsAndBerries); // outputs a single array
+
+// const flying = { wings: 2 }
+// const car = { wheels: 4 }
+// const flyingCar = {...flying, ...car}
+// console.log(flyingCar) // {wings: 2, wheels: 4}
+
+//    ADD NEW MEMBERS TO ARRAYS WITHOUT USING THE push() METHOD
+// let veggies = ['onion', 'parsley'];
+// veggies = [...veggies, 'carrot', 'beetroot'];
+// console.log(veggies);
+
+
+//     CONVERT A STRING TO AN ARRAY USING THE SPREAD OPERATOR
+// const greeting = "Hello";
+// const arrayOfChars = [...greeting];
+// console.log(arrayOfChars); //  ['H', 'e', 'l', 'l', 'o']
+
+//      COPY EITHER AN OBJECT OR AN ARRAY INTO A SEPERATE ONE
+// const car1 = {
+//     speed: 200,
+//     color: 'yellow'
+// }
+// const car2 = {...car1}
+
+// car1.speed = 201
+
+// console.log(car1.speed, car2.speed)
+
+// const meal = ['soup', 'steak', 'ice cream']
+// let [starter] = meal;
+// console.log(starter);
+
+// let set = new Set();
+// set.add(1);
+// set.add(2);
+// set.add(3);
+// set.add(2);
+// set.add(1);
+
+// console.log(set)
+
+// function count(...basket) {
+//     console.log(basket.length)
+// }
+// count(10, 9, 8, 7, 6)
