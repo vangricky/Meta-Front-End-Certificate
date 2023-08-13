@@ -655,3 +655,114 @@
 
 // ---------------------------------------------------------------------
 
+// Arrays  // for of loops
+
+// const colors = ['red', 'orange', 'yellow']
+// for (var color of colors) {
+//     console.log(color)
+// }
+
+//Object.keys()
+//Object.keys examples below
+// const car2 = {
+//     speed: 200,
+//     color: "red"
+// }
+// console.log(Object.keys(car2)); // ['speed','color']
+//basically, this will output the "KEY" values in the object.. hence the name Object.keys <---
+
+
+//Object.values()
+//Object.values example below
+// const car3 = {
+//     speed: 300,
+//     color: "yellow"
+// }
+// console.log(Object.values(car3)); // [300, 'yellow']
+//basically, just like Object.keys, this one is Object.values... will outout each value of a key in the Object.
+
+
+//Object.entries()
+//Object.entries example below
+// const car4 = {
+//     speed: 400,
+//     color: 'magenta'
+// }
+// console.log(Object.entries(car4));
+//this Object method will output the key and value, next to each other so like: [key, value]
+
+//other example , for fun:
+// var clothingItem = {
+//     price: 50,
+//     color: 'beige',
+//     material: 'cotton',
+//     season: 'autumn'
+// }
+
+// for (key of Object.keys(clothingItem)) {
+//     console.log(key, ":", clothingItem[key])
+// }
+
+// function testBracketsDynamicAccess() {
+//     var dynamicKey;
+//     if(Math.random() > 0.5) {
+//       dynamicKey = "speed";
+//      }else{
+//        dynamicKey = "color";
+//      }
+  
+//       var drone = {
+//         speed: 15,
+//         color: "orange"
+//       }
+  
+//       console.log(drone[dynamicKey]);
+//   }
+//   testBracketsDynamicAccess();
+
+// const car = {
+//     engine: true,
+//     steering: true,
+//     speed: "slow"
+// }
+
+// const sportsCar = Object.create(car);
+// sportsCar.speed = "fast";
+// console.log("The sportsCar object: ", sportsCar);
+
+// console.log('------ for-in is unreliable -----');
+// for (prop in sportsCar) {
+//     console.log(prop);
+// }
+
+// console.log(".", "Iterating over object AND its prototype!");
+
+// console.log("'----- for-of is reliable -----");
+// for (prop of Object.keys(sportsCar)) {
+//     console.log(prop + ": " + sportsCar[prop]);
+// }
+// console.log(".", "Iterating over object's OWN PROPERTIES only!")
+
+//ES6 Strings
+
+let noMultiLine = "No multi-line strings in ES6";
+console.log("Did you know? " + noMultiLine);
+
+//ES6 Multi-line template literals
+
+let multiLine = `
+    Using ES6
+    backticks,
+    multi-line
+    strings are
+    possible!
+    `;
+
+console.log(multiLine)
+
+//ES6 variable interpolation
+
+let first = `He said, "Don't you know? ES6, it's got some great features!`;
+let second = `"Wouldn't you want to learn more?", he asked.`
+
+console.log(`${first} - and I got curious. ${second}`);
