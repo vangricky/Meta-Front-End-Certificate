@@ -961,3 +961,138 @@
 //     console.log(basket.length)
 // }
 // count(10, 9, 8, 7, 6)
+
+
+
+//DOM (Document Object Model)
+
+//Elements tab : used to interact with the DOM
+// Access through the devtools in the broswer window
+// Browser allows you to interact with the DOM
+
+// const h2 = document.createElement("h2")
+// h2.innerText = "This is an h2 heading"
+//h2.setAttrivuate('id', 'sub-heading')
+//h2.setAttrivuate('class', 'secondary')
+// document.body.appendChild(h2)
+
+// DOM Manipulation (JavaScript Selectors) #The framework a browser uses to read and store a webpage
+// document.
+
+// BELOW :   You will select the query that is 'p'. It will display text, if p has text.
+// document.querySelector('p')
+// document.querySelector('a')
+
+
+//  USER-TRIGGERED EVENTS (EVENT listeners)
+
+/* <button type="button" class="btn btn-lg btn-primary" onclick="clickHandler()">
+    Primary button
+</button> */
+
+//    EVENT HANDLERS
+// BELOW, I TYPED IT INTO THE CONSOLE OF GOOGLE CHROME
+
+// const target = document.querySelector('body')
+
+// function handleClick() {
+//     console.log("clicked the body")
+// }
+// target.addEventListener('click', handleClick)
+
+// function handleClick2() {
+//     console.log("clicked the heading")
+// }
+
+
+
+//     EXERCISE: WEB PAGE CONTENT UPDATE
+//      To capture user input, you can use the built-in prompt() method, like this:
+// let answer = prompt("What is your name?");
+// if (typeof(answer) === 'string') {
+//     var h1 = document.createElement('h1')
+//     h1.innerText = answer;
+//     document.body.innerTExt = '';
+//     document.body.appendChild(h1);
+// }
+
+// ---------------
+
+// var h1 = document.createElement('h1')
+// h1.innerText = "Type into the input to make this text change"
+
+// var input = document.createElement('input')
+// input.setAttribute('type', 'text')
+
+// document.body.innerText = '';
+// document.body.appendChild(h1);
+// document.body.appendChild(input);
+
+// input.addEventListener('change', function() {
+//     h1.innerText = input.value
+// })
+
+
+
+
+//          EXERCISE: CAPTURE DATA 
+// const h1 = document.querySelector('h1')
+
+// let arr = [
+//     'Example Domain',
+//     'First Click',
+//     'Second Click',
+//     'Third Click'
+// ]
+
+// function handleClicks() {
+//     switch(h1.innerText) {
+//         case arr[0]:
+//             h1.innerText = arr[1]
+//             break;
+//         case arr[1]:
+//             h1.innerText = arr[2]
+//             break;
+//         case arr[2]:
+//             h1.innerText = arr[3]
+//             break;
+//         default:
+//             h1.innerText = arr[0]
+//     }
+// }
+
+// h1.addEventListener('click', handleClicks)
+
+
+//    LITTLE PEEK OF JSON (JavaScript Object Notaion)
+// const data = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     greeting: "Hello"
+// }
+// undefined
+// JSON.stringify(data)
+
+
+class Cake {
+    constructor(lyr) {
+        this.layers = lyr
+    }
+
+    getLayers() {
+        return this.layers;
+    }
+}
+
+class WeddingCake extends Cake {
+    constructor() {
+        super(2)
+    }
+
+    getLayers() {
+        return super.getLayers() * 5;
+    }
+}
+
+var result = new WeddingCake();
+console.log(result.getLayers())
