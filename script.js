@@ -1074,25 +1074,240 @@
 // JSON.stringify(data)
 
 
-class Cake {
-    constructor(lyr) {
-        this.layers = lyr
-    }
 
-    getLayers() {
-        return this.layers;
-    }
-}
 
-class WeddingCake extends Cake {
-    constructor() {
-        super(2)
-    }
 
-    getLayers() {
-        return super.getLayers() * 5;
-    }
-}
+// class Cake {
+//     constructor(lyr) {
+//         this.layers = lyr
+//     }
 
-var result = new WeddingCake();
-console.log(result.getLayers())
+//     getLayers() {
+//         return this.layers;
+//     }
+// }
+
+// class WeddingCake extends Cake {
+//     constructor() {
+//         super(2)
+//     }
+
+//     getLayers() {
+//         return super.getLayers() * 5;
+//     }
+// }
+
+// var result = new WeddingCake();
+// console.log(result.getLayers())
+
+
+
+
+
+//     BELOW IS JUST REVIEW FOR THE OOP
+//     OBEJCT ORIENTED PROGRAMMING
+//     THINGS TO KNOW AND REMEMBER
+//     1. Abstraction
+//     2. Inheritance
+//     3. Polymorphism
+//     4. Encapsulation
+
+//     OOP EXAMPLE:
+// var purchase1 = {
+//     shoes: 100,
+//     stateTax: 1.2,
+//     totalPrice: function() {
+//         var calculation = purchase1.shoes * purchase1.stateTax;
+//         console.log('Total price:', calculation)
+//     }
+// }
+
+// purchase1.totalPrice()
+
+// var purchase2 = {
+//     shoes: 50,
+//     stateTax: 1.2,
+//     totalPrice: function() {
+//         var calculation = purchase2.shoes * purchase2.stateTax;
+//         console.log('Total price:', calculation)
+//     }
+// }
+
+// purchase2.totalPrice()
+
+// ABOVE, in line 1114 and 1125, we used the variable name, then '-.shoes; / '-.stateTax'
+// We can just skip writing the variable altgother and just write the 'this' keyword. 
+// 'this' will refer to the variable (object) that it is currently in.
+// So for example, I will write line 1121-1128 with the updated 'this' keyword
+
+// var purchase3 = {
+//     shoes: 10,
+//     stateTax: 1.2,
+//     totalPrice: function() {
+//         var calculation = this.shoes * this.stateTax;
+//         console.log('Total price:', calculation);
+//     }
+// }
+// purchase3.totalPrice()
+
+// FUNCTIONAL PROGRAMMING EXAMPLE
+
+// var shoes = 100;
+// var stateTax = 1.2;
+
+// function totalPrice(shoes, tax) {
+//     return shoes * tax
+// }
+
+// var toPay = totalPrice(shoes, stateTax);
+
+// console.log(toPay);
+
+// TRANSLATE THE EXAMPLE ABOVE TO OOP:
+
+// var purchase1 = {
+//     shoes: 100,
+//     stateTax: 1.2,
+//     totalPrice: function() {
+//         var calculation = this.shoes * this.stateTax;
+//         console.log('Total price:', calculation);
+//     }
+// }
+
+// purchase1.totalPrice()
+
+
+//          CLASSES FUNDAMENTALS ( IMPORTANT !! )
+//          TO CREATE A CLASS, type 'class' keyword and type the desired title for the class name
+//          make sure the class name is in UPPERCASE letters!
+//          FOR EXAMPLE:
+
+// class Car {
+//     constructor(color, speed) {
+//         this.color = color;
+//         this.speed = speed;
+//     }
+    
+//     turboOn() {
+//         console.log("turbo is on!")
+//     }
+// }
+
+//          BELOW, WE MAKE A NEW OBJECT USING THE TEMPLATE WE MADE WITH 'class' ABOVE...
+//          EXAMPLE OF HOW TO MAKE A NEW OBJECT, BELOW
+
+// const car1 = new Car("red", 120)
+
+// car1.turboOn()
+
+
+//          BELOW, IS AN EXAMPLE OF USING OBJECT CREATE, same thing as line 1199. JUST ANOTHER WAY TO CODE IT
+// var myCar = Object.create(Car)
+// console.log(Car) //[class Car]
+
+// var myCar = new Car();
+// console.log(Car)
+// myCar.turboOn()
+
+
+//          INHERITANCE
+//Inheritance is one of the foundations of object-oriented programming.
+
+/* 
+
+
+There is a base class of "Animal".
+
+There is another class, a sub-class inheriting from "Animal", and the name of this class is "Bird".
+
+Next, there is another class, inheriting from "Bird", and this class is "Eagle".
+
+Thus, in the above example, I'm modelling objects from the real world by constructing relationships between Animal, Bird, and Eagle. Each of them are separate classes, meaning, each of them are separate blueprints for specific object instances that can be constructed as needed.
+
+To setup the inheritance relation between classes in JavaScript, I can use the extends keyword, as in 'class B extends A', or for 
+better example: 'class Toyota extends Car'
+*/
+
+// class Animal {
+//     constructor(legs, eyes) {
+//         this.legs = legs;
+//         this.eyes = eyes
+//     }
+
+//     speedOn() {
+//         console.log("WOOHOO! This animal is fast as heck!")
+//     }
+// }
+
+// const cheetah = new Animal(true, true)
+// console.log(Animal)
+// cheetah.speedOn()
+
+// class Bird extends Animal {
+//     constructor(legs, eyes, mouth, nose, ears) {
+//         super(legs, eyes)
+//         this.mouth = mouth;
+//         this.nose = nose;
+//         this.ears = ears;
+//     }
+
+//     walk() {
+//         console.log("The animal is currently walking...")
+//     }
+// }
+
+// const raven = new Bird(true, true, true, true, true)
+// raven.walk()
+// raven.speedOn()
+
+//              ABSTRACTION
+
+
+//              POLYMORPHISM
+
+/*
+So, to understand what polymorphism is about, let's consider some real-life objects.
+A door has a bell. It could be said that the bell is a property of the door object. 
+This bell can be rung. When would someone ring a bell on the door? Obviously, to get someone to show up at the door.
+Now consider a bell on a bicycle. A bicycle has a bell. It could be said that the bell is a property of the bicycle object. 
+This bell could also be rung. However, the reason, the intention, and the result of somebody ringing the bell 
+on a bicycle is not the same as ringing the bell on a door.
+
+BASICALLY, THE EXAMPLE ABOVE THAT YOU READ HELPS YOU UNDERSTAND THAT THERE ARE 'MULTIPLE'
+FORMS Of AN OBJECT
+ */      
+
+// const bicycle = {
+//     bell: function() {
+//         return "RING! Get out of the way!"
+//     }
+// }
+// const door = {
+//     bell: function() {
+//         return "RING! Open the door!"
+//     }
+// }
+
+// bicycle.bell()
+// door.bell()
+// console.log(bicycle.bell())
+// console.log(door.bell())
+
+//I CAN NOW MAKE A FUNCTION THAT WILL CALL EITHER THE bicycle OR door.
+// I MAKE A FUNCTION WITH 1 PARAMETER.
+//NEXT, I WILL CONSOLE.LOG 'door' or 'bicycle'
+
+// function ringTheBell(thing) {
+//     console.log(thing.bell())
+// }
+
+// ringTheBell(door)
+
+
+
+
+
+
+//                                      REVIEW FOR WEEK 3 DONE ABOVE
+
+//
