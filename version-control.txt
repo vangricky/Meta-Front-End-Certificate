@@ -399,3 +399,38 @@ if you were to type 'grep sam names.txt'
 output will be names with '-sam-' in it, no matter where -sam- is in the name.
 type 'grep -w Sam names.txt'
 this will output the exact name 'Sam'
+
+
+
+
+// Git
+Git is a version control system
+Git was designed to do better than previpus vcs.
+It is fast, reliable, open source
+
+// GitHub is a cloud repository
+It has access control, pull requestions, and automations.
+Projects on it can be private or public. Users have their own profile where you can follow others.
+
+
+Github Tokens
+
+//Git Clone 
+'mkdir projects'
+'cd projects'
+'git clone (paste your HTTPS from your newly created repo here)'
+
+then, type 
+'ls -la'
+this will list your newly clone repository in your directory
+
+
+when done making changes or adding anything into your code, type:
+'git add ."
+this will put your code changes and additions into a staging area.
+then, type:
+'git commit -m "(inside the parenthesis, type your comments)"'
+then, press enter to push the changes and COMMIT your changes.
+then, type:
+'git push'
+this will push all the things you added and commits, to the cloud/repo so that your colleagues can 'git pull' from.
