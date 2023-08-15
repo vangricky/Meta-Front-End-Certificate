@@ -1441,3 +1441,26 @@ Tests as expactation-documenting code
 //In jest, we use in-built mocking functions
 
 //          SNAPSHOT TESTING: used by web developers to verify that there are no regressions in the DOM
+
+
+//              TDD (Test Driven Development)
+// Streamline of writing code, that will satisfy some requirements
+
+// test('returns true if statusOfKeys exists', function() {
+//     expect(statusOfKeys).toBeDefined()
+// })
+
+// //this will fail
+// function statusOfKeys() {}
+
+//                  STEPS FOR TDD
+/*
+1. Read new requirement
+2. Write failing test
+3. Update source code
+4. Run test that passes
+5. Refactor implementation */
+
+//Red, green, refactor
+//red = fail
+//green = pass
