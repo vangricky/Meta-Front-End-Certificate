@@ -202,3 +202,200 @@ Any updates to software such as patching or moving to the latest version should 
 This is also the same rule for not upgrading software when critical updates are released.
 - Reputation: Downtime or issues in production is damaging for a company as it does not instill confidence in end users. 
 If something is down or broken it can cause the company to lose potential customers.
+
+
+
+
+
+
+
+//                      MODULE 2
+
+GUI 
+
+// The Command line
+- Various tasks 
+- Quicker
+- Less errors
+
+Learning the command line will make you achieve these things listed below:
+1. Creating directories
+2. Creating files 
+3. Combind directories 
+4. Copying and moving files
+5. Performing advanced searches
+
+When I am advanced, I will be able to do this with the command line:
+1. Track software
+2. Access remote servers
+3. Search for files using specific critera
+4. Unzip archives
+5. Access manuals and display them in the command line
+6. Install/uninstall/update software
+7. Check disk space
+8. Automate various tasks
+9. Control User Access
+10. Stop, start, or Restart programs
+11. Create aliases to execute long commands
+12. downlaod files from internet
+13. Run
+14. Containerization (virtual software)
+
+
+// Basic commands
+- cd 
+change directory
+if I were to type 'cd ~/Desktop' , it will take me to the desktop 'folder'
+if I were to type 'cd..' you will move out to the current directory and go to the parent directory
+
+-touch 
+makes a new file of what you specify
+if I were to type 'touch example.txt' it will create a new file called 'example.docx'
+
+-mkdir
+this makes a new folder
+
+-history
+to view the history of previous types commands, type 'history'
+
+
+
+To create a Folder on the Desktop, then go INTO that newly created folder, then create a file in that new folder, then 
+open it in VScode, you will:
+
+1. type 'cd ~/Desktop'
+2. type 'mkdir foldername'
+3. type 'cd foldiername'
+4. type 'touch filename.whatevertypefileyouwant' (example.js)
+5. code example.js
+
+
+
+
+
+// What are Unix Commands?
+
+Majority of companies run their platform on a cloud, Linux...
+
+HELPER COMMANDS:
+- man 
+the command 'man' is short for manual
+this command is useful if you need to know more about a command, for example:
+type 'man ls'
+this will show you instructions for the command 'ls'
+
+you can also use something called 'flags'. its used to modify the behavior of a command
+for example: 'ls -l'. the "-l" part of the command is called a FLAG.
+
+'ls' - show contents
+'cd /Users/Ricky/Github ' <- example
+'ls -l'
+this lists the files out in list order and shows the read/write permission, owners, and groups it belongs to
+'ls -a'
+this lists all files and directories, even hidden owners
+'pwd' (print working directory)
+this shows the full path of the current working directory
+'cp'
+copy one file/folder, to one destination to another
+'mv' - move command
+moves files from one directory to another
+for example:
+type 'mv foldername foldername'
+the first foldername is the folder you want to move, the second foldername is where you want to place it in
+
+
+
+// Below will be explanations of what each letter means when we do 'ls -l' (list form in our terminal)
+'l' 
+this is a link file. it is always going to be first. 
+'temp ->'
+this is a temporary file
+'d' - bin directory
+this is a standard directory, you can use the change directory (cd) command to enter it
+'etc' 
+to change directory, use 'cd'.
+type 'cd etc' directory, and press enter
+type 'ls' to check contents
+( will need to be in the root to see etc file. so 'cd..' all the way)
+( or, type 'cd /'  , this will take you to the root)
+
+'cat' 
+you run this command and then a file, which will return the content in the file. for example
+'cat file1.txt'
+
+'wc' 
+this will return the wordcount for a file.
+type 'wc file1.txt -w'
+the '-w' flag tells the wc command to RETURN the word count
+
+
+
+// Pipes 
+A coding tool that allows the output of one command to be used as the input for a different command
+a pipe command is ' | '
+'ls | wc -w'
+'cat file1.txt | wc -w'
+'cat file1.txt file2.txt | wc -w'
+
+
+
+// Redirections
+With redirection, you can change the standard input or output.
+stdin = 0
+stdout = 1
+stderr = 2
+
+Standard Input
+<
+cat command
+
+Storing input
+(explore an example of how to take input and store it in a .txt file)
+type 'cat > input.txt'
+press enter
+now, you have access and power to type whatever you want into this file.
+after you're done, press enter.
+then click 'control + d' to end.
+
+type 'cat < input.txt'
+this is how you display what you just wrote using the previous cat command.
+
+
+
+Standard Output
+normally, when we type 'ls' in a terminal, itll display the list of what's in the directory.
+to make it output elsewhere
+type 'ls -l > output.txt'
+the output.txt hasn't been created yet, but once you click enter, you will create it.
+then click 'ls' to display directory
+type 'less output.txt'
+this less command will preview your file.
+
+
+// Error Output
+
+< input.txt > output.txt 2> error.txt
+in terminal
+type 'ls -l /bin/usr/ > error.txt
+an error will show up and say 'ls: cannot access '/bin/usr': No such file or directory 
+DO THIS INSTEAD =
+'ls -l /bin/usr 2> error.txt'
+after it is created, type the command below to preview the data
+'less error.txt'
+
+
+
+// GREP (Global Regular Expression Print)
+use this to search files and folders as well as contents in them
+
+type 'ls -l'
+you will see your directory files
+(in this example, name.txt is made with names in it)
+type 'less namestxt'
+type 'grep Sam names.txt'
+output will be 'Sam'.
+grep is case sensitive
+if you were to type 'grep sam names.txt'
+output will be names with '-sam-' in it, no matter where -sam- is in the name.
+type 'grep -w Sam names.txt'
+this will output the exact name 'Sam'
