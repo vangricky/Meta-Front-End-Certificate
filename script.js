@@ -1464,3 +1464,25 @@ Tests as expactation-documenting code
 //Red, green, refactor
 //red = fail
 //green = pass
+
+const a = true;
+if (!a) {
+    console.log("Green")
+} else {
+    console.log("Blue")
+}
+
+var x = true;
+x = 23;
+console.log(x)
+
+var x = 10;
+
+if (x)
+
+try {
+    throw new Error();
+    console.log("Square")
+} catch(err) {
+    console.log("circle")
+}
