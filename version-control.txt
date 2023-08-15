@@ -1,0 +1,108 @@
+// Intro to the course
+------------------------------
+Version Control: Changes and modifications
+(essential)
+
+add
+update
+erase
+
+Control Systems: Centralized and distributed
+
+Module 1:
+- Git, GitHub
+- repo
+- Concepts
+
+"cd my-project" 
+linux COMMANDS
+
+// How do developers colab in the real world?
+---------------------------------
+
+Move cohesive with others with wide range of skills
+When buidling features together, we have to work together
+We have to work with other developers and non-developers as well
+We all must be on the same PAGE
+Communication is one of the most imporatant skills to have in the course, and we will learn how to
+The skill differs in each company.
+
+//          Module list
+    1. Software Collaboration
+    2. Command line
+    3. Git
+    4. Graded Assesment
+
+
+
+// What is version control?
+Wish you could've gone back to previous version of a document? Well, that's what version control is about.
+It is a system that tracks your progress.
+Primary goal for ANY version control system is to:
+1. Keep track of changes
+2. Provide access to history
+3. Revert 
+
+- add 
+- modify/update 
+- delete
+
+Revision History: reverting/rollback your code , all changes made will be recorded with who and when someone made them.
+
+identity: 
+collaboration
+automation: track changes, 
+efficienty: you will be working with many people.
+
+peer review: code inspection by your peers, to feedback when neccesary
+
+DevOps: Set of practices, philosophies, and tools to Increase ability to deliver application in high quality velocity
+Version control is key to aid in software quality.
+
+// Systems of version control and tools
+It may happen that when you working on a new feature, another dev is working on the same file. It may be problematic, but luckily
+version control helps you with this problematic
+
+Many version control systems out there, some are:
+- Subversion
+- Perforce
+- AWS Code Communication
+- Mercurial
+- Git
+
+------------------------------------
+
+Version Control can be split into two categories:
+1. Centralized
+2. distributed
+
+Both types are quite similar but..
+
+Centralized Version Control System requires (CVCS): 
+1. Server
+2. Client
+
+Developers that are using a CVCS, will need to pull down the code from the server to their local machine.
+This gives user a copy of their work
+The Client has the latest code.
+Afer making changes to the code, you will need to PUSH the code to the server.
+
+distributed version control system (DVCS):
+SImilar to centralized model.
+Still need to PULL from server, but!
+When you pull the file from the server into your system, you will have the ENTIRE history of changes too.
+
+CVCS ADVANTAGES:
+Easier to learn
+More access control to user
+
+CVCS DISADVANTAGES:
+slow, because you need to establish a internet connection
+
+DCVS: 
+You dont need to connect to the server to add your changes or view file history. It works as if you
+are connected to the server, but youre on your local machine.
+You ONLY need internet access to PUSH and PULL from the server
+It allows developers to work in an OFFLINE state.
+- Speed and performace are BETTER than CVCS
+
