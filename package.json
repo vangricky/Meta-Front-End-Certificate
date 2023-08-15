@@ -1,0 +1,24 @@
+{
+  "name": "meta",
+  "version": "1.0.0",
+  "description": "Currently enrolled in the Meta Front-End Certificate",
+  "main": "addFive.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.6.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vangricky/Meta-Front-End-Certificate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vangricky/Meta-Front-End-Certificate/issues"
+  },
+  "homepage": "https://github.com/vangricky/Meta-Front-End-Certificate#readme"
+}

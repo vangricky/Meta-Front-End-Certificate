@@ -1310,4 +1310,134 @@ FORMS Of AN OBJECT
 
 //                                      REVIEW FOR WEEK 3 DONE ABOVE
 
-//
+//          NODE JS (backend)
+//NPM package manager
+//      lets developers use libraries and frameworks as node.js modules
+// npm (node package manager)
+// npm and node might be installed your device, or you may have to downlaod it.
+
+//      NPM COMMANDS:
+//      node -v
+//      npm -v
+
+//      to install any node module from npm repo
+//      npm install lower-case
+// import { lowerCase, localeLowerCase } from "lower-case";
+// lowerCase("Word"); //=> "word"
+
+//                  HOW TO START A NEW NODE PROEJCT
+//      WHEN YOU WANT TO START A NEW PROJECT, FIRST, OPEN A FOLDER ON YOUR MACHINE WHERE YOU WANT 
+//      TO PLACE YOUR PROJECT FILES
+//      THEN RUN THE FOLLOWING COMMAND IN THE TERMINAL
+//                  npm init
+//      package.json will be installed, everytime. there are over 11 millions modules in the repo.
+//      basically, library where other coders have compiled their code
+//      OTHER NPM INSTALL COMMANDS (for libraries)
+//                  npm i react
+//                  npm i webpack
+//                  npm i bootstrap-vue
+//                  npm i @angular/core
+//      npm install <-- main command
+
+
+
+//                          TESTING COURSE
+/*
+Objectives for this course:
+1. Identify why developersr test their code
+2. Exaplain the red-green-refactor cycle
+3. Differentiate between manual and automated testing
+4. Demonstrate an understanding of unit testing
+*/
+
+
+// expect concatStrings to return "abcdef" when I pass it "abc" as the first arg. and "def" as the sec. arg.
+// function concatStrings(strA, strB) {
+//     return strA + strB
+// }
+// concatStrings("abc", "def")
+
+//JavaScript testing frameworks
+
+/*
+Tests as expactation-documenting code
+-- Code syntax that specifies the expected result of passing specific values to your functions */
+
+// JEST (testing)
+// use the word 'expect' function
+// expect(concatStrings("abc", "def")).toBe("abcdef");
+
+
+//          REFACTORING
+// Updating code, without affecting the results it produces.
+
+
+//          TDD Approach
+/*
+1. Write a failing test
+2. Rewrite code to pass
+3. Optimize code without changing its results  
+*/
+
+/*The benefits of TDD Approach to testing your js code is because:
+- Repeatable Code
+-  Automateic Testing
+- Cost and Time Effective*/
+
+
+
+//TESTING , definition: Confirming that software works as specified in the software's requirements!
+//              3 TYPES OF TESTING!!!!!
+//  1. e2e (end to end)
+//  2. Integration
+//  3. Unit
+
+
+//      e2e = slow and time consuming (unfortunately)
+//open web app in browser, then interact it the same way a user would. just going through the app.
+//basically testing it end to end, lol.
+
+
+// e2e testing frameworks available 
+/*
+1. WebdriverJS
+2. Protractor
+3. Cypress  
+*/
+
+
+
+//      INTEGRATION TESTING  (faster and cheaper)
+//testing parts of your app and see how it works togeter
+
+//some INTEGRATION testing softwares include:
+/*
+1. React testing library
+2. Enzyme 
+*/
+
+
+//      UNIT TESTING (BEST FOR FAST AND CHEAP)
+// self contained, meant to test code in isoluation
+//best test option
+
+
+
+
+
+
+
+//                      JEST (JavaScript testing framework)
+
+// Built by Meta
+// JavaScript-based library
+
+//Babel TypeSCript Node Vue
+//Code Coverage
+
+//              Mocking: Separating code from related dependencies during testing
+// mocking is helpful. 
+// front end can do their stuff, then use mock to help complete the backend and test thier data
+//In jest, we use in-built mocking functions
+
+//          SNAPSHOT TESTING: used by web developers to verify that there are no regressions in the DOM
