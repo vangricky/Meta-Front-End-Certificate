@@ -106,3 +106,99 @@ You ONLY need internet access to PUSH and PULL from the server
 It allows developers to work in an OFFLINE state.
 - Speed and performace are BETTER than CVCS
 
+Git was created by: Linus Torvalds
+Git became popular in the open-source community due to its distributed VCS design and Github offering free Git hosting for open-source projects.
+Git has since become the selected version control system for many open-source and proprietary software projects.
+
+// WORKFLOW
+Using Version Control without a proper workflow is like building a city without traffic lights; 
+without appropriate management, everything will turn into chaos.
+
+For example, let’s say you’re working on a big project and editing a file.
+Another developer also starts editing a file. Both of you submit the file to the VCS at the same time. 
+Now there’s a conflict! How should the conflict be resolved? A good workflow will have a process for resolving conflicts.
+
+Another example is when a new junior developer is joining your team. If the project code is used for a critical system,
+it is risky to allow them to submit code changes directly. To solve this, many developers use a peer review system 
+where another developer must review code before it can be merged in.
+
+Workflows are essential to ensure code is managed correctly and reduce mistakes from happening. 
+Different projects will have different workflows. In this course, you’ll learn some common workflows using the Git Version Control System.
+
+
+// Continuous Integration
+Continuous Integration, or CI, is used to automate the integration of code changes from multiple developers 
+into a single main stream. Using a workflow whereby small changes are merged frequently, often many times per day, 
+will reduce the number of merge conflicts.
+
+This process is widespread in test-driven software development strategies. CI is often used to automatically 
+compile the project and run tests on every code change to ensure that the build remains stable and prevent regressions in functionality.
+
+
+// Continuous Delivery
+Continuous Delivery is an extension of Continuous Integration. Once the changes have been merged 
+into the main stream, a Continuous Delivery system automatically packages the application and prepares it for deployment. 
+This helps avoid human error when packaging the application.
+
+
+// Continuous deployment
+Continuous Deployment is an extension of Continuous Delivery. The goal of Continuous Deployment is to deploy 
+and release software to customers frequently and safely. The strategy commonly involves automatically deploying to a 
+test (also known as staging) environment first to validate the deployment package and software changes. 
+Once validated, it can automatically deploy to the live (also known as production) environment for customers.
+
+
+// Conclusion
+With these tools and procedures, it is possible to understand how software starts from a developer writing code to 
+being deployed live for customers to use. Of course, there is much more to running a live software service, 
+but that is a lesson for another day.
+
+
+
+// STAGING vs. production
+
+Before a dev. team releases new features/changes, they need to verify that their new code is not going to cause any issues or bugs.
+They do this by setting up multiple environments for different ways to test and verify.
+A common practice is for teams to have multiple environments such as:
+- Developer environment
+- UAT or QA environment
+- Staging environment
+The main purpose of this flow is to find any potential issues that may arise due to changes or new features being added to the codebase. 
+The more ways to test the changes the less likely bugs will be introduced.
+
+
+// Staging Environment
+The staging environment should mimic your production environment. This allows teams to spot or find any potential
+issues prior to theme getting to production. The closer the staging environment is to your production, the more accurate your testing 
+is going to be.
+Staging should also cover all areas of the architecture of the application including the database and any other services
+that may be required. 
+
+Areas that benefit from staging environment includes:
+- New Features: Developers submitting new featuers along with feature flags for turning them on and off should always do a testing round
+in a staging environment. It just allows the team to verify that the feature works.
+- Testing: You can run tests in your staging envirnoment. QA teams will normally use it to verify new features, config changes,
+or software updates/patching. UNIT TESTING, INTEGRATION TESTING, and PERFORMANCE TESTING will be the type of test they do for this.
+- Migrations: Staging is a perfect place to test and verify data migrations. 
+Snapshots can be taken from production and used to test your migration scripts to confirm your changes will not break anything. 
+If in the case it does cause an issue, you simply rollback and try again. 
+Doing something like a migration in production is extremely risky and error-prone.
+- Configuration Changes: Configuration can also cause headaches for teams, especially in a large cloud-based architecture. 
+Having a staging environment will allow you to spot any potential issues or bottlenecks.
+
+// Production Environment
+When you get here to this point, it's deployed... meaning, any issues or problems you may have had SHOULD have been caught and fixed
+in the staging enviroment. Because, that's what it's for... The staging area (enviroment) gives the 
+team a safety net to catch these possible issues. Any code that is deployed to production should have been tested and verified 
+before the deployment itself.
+
+- Downtime: You will lose A LOT of 'revenue' for any service customer facing problems. If customers can not
+access or use your website or app to its full capabilities, it will most likely have a cost involved... (DUN DUN DUNNNNN)
+Take for example an e-commerce company that allows users to buy goods and services online. 
+If they release a new feature to their shopping cart which actually breaks the payment process, this will have an 
+impact on customers not being able to buy goods online.
+- Vulnerabilities: Cyber-security should also play a big role in what gets released in production. 
+Any updates to software such as patching or moving to the latest version should be checked and verified. 
+This is also the same rule for not upgrading software when critical updates are released.
+- Reputation: Downtime or issues in production is damaging for a company as it does not instill confidence in end users. 
+If something is down or broken it can cause the company to lose potential customers.
