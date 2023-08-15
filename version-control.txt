@@ -434,3 +434,31 @@ then, press enter to push the changes and COMMIT your changes.
 then, type:
 'git push'
 this will push all the things you added and commits, to the cloud/repo so that your colleagues can 'git pull' from.
+
+
+//Git Branch
+
+to make a branch type:
+'git checkout -B nameofbranch'
+to see if you are in a branch type:
+'git branch'
+
+when in your branch, pretend we made a file that we need to push to the main repo. we do this by:
+'touch test2.txt'
+this creates a new file for example
+'git add test2.txt'
+'git commit -m "added test2.txt'
+'git push -u origin nameofbranch'
+after this step, it will need you to make a pull request.
+
+go to your github.com on the browser. 
+click 'compare & pull request'
+fill out the form
+click 'create pull request'
+once approved, click merge to main branch.
+
+then, come back to your vscode.
+type:
+'git checkout main'
+then type:
+'git pull'
