@@ -9,7 +9,7 @@
     <!-- <meta name="keywords" content="holidays, free, summer"> -->
     <meta name="robots" content="index, follow">
     <meta name="language" content="english">
-    <meta http-equiv="refresh" content="30"> <!--refreshes the page every '30' seconds-->
+    <!-- <meta http-equiv="refresh" content="30"> refreshes the page every '30' seconds -->
 
     <!-- OPEN GRAGH PROTOCOL (OGP)-->
     <!-- There are 4 MANDATORY OGP's in your document. [title, type, url, image] -->
@@ -245,6 +245,19 @@
 
 
 
+        <!-- iFrame -->
+        <iframe src="https://www.example.com" width="320" height="240" allow=" payment 'none'; camera 'none'; microphone 'none';" sandbox=""></iframe>
+        <!-- allow: change preferences to disable features on the web page -->
+        <!-- sandbox: if you type sandbox="" into your element, everything is disabled (popups, download, etc)
+        if you want to allow it all, just delete sandbox out of the element, or allow certain types of things through.
+        for example: 'sandbox: "allow-downloads" '-->
+
+
+
+        <!-- Canvas -->
+        <canvas width="640" height="480" id="my_canvas">
+
+        </canvas>
 
 
 
