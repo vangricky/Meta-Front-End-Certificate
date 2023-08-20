@@ -1,0 +1,34 @@
+//Combination Selectors
+
+There are '4' types of combination selections, and they are...
+1. Descendant Selectors (using space)
+2. Child Selectors (>)
+3. General Sibling Selectors (~)
+4. Adjacent Sibling Selectors (+)
+
+Below, I will type an example code. Below the example code, I will explain each Combination Selectors
+
+<div id="blog">
+    <h1>Latest News</h1>
+    <div>
+    <h1>Weather Forecast</h1>
+    <p>The weather will be sunny</p>
+    <p>Tomorrow will be rainy.</p>
+    </div>
+</div>
+
+'Descendant Selectors': Elements contained within another selector 
+example: #blog h1 {}
+
+'Child Selectors': Instead of space, its more specific. You first select a person, then select their immidiate children with a specific value
+example: #blog > h1 {}
+this is the case, because we see that there '2' h1's. If you only want to customize the FIRST h1, use a CHILD SELECTOR.
+the output will be: the 1st h1 will be customized, and the second h1 will be just normal and untouched,
+
+'General Sibling Selectors': Allow you to select a person, then select all younger brothers 
+example: h1 ~ p {}
+output: all p's under the h1 element will be customized
+
+'Adjacent Sibling Selectors': Use adjacent selectors to target only the first, or adjacent, element 
+that follows another element.
+example: div + p {}
