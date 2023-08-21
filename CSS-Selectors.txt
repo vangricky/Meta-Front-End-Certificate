@@ -32,3 +32,86 @@ output: all p's under the h1 element will be customized
 'Adjacent Sibling Selectors': Use adjacent selectors to target only the first, or adjacent, element 
 that follows another element.
 example: div + p {}
+
+
+
+// Pseudo-classes: state-based selectors
+for example: 
+':hover'
+in focus
+visited link
+specific Elements
+
+Syntax (this is how to write a pseudo class in the css document):
+seletor:pseudo-class {
+    property: value
+}
+
+
+User Action States:
+1. :hover (something happens when the user 'hovers' over the element)
+2. :active (something happens when the user clicks on the element)
+3. :focus
+
+
+
+// Form States
+1. :disabled and :enabled
+2. :checked and :indeterminate
+3. :valid and :invalid
+
+
+// Specific Position-Based States
+1. :first-of-type
+2. :last-of-type
+3. :nth-of-type()
+4. :nth-last-of-type()
+
+// Imagine we have text in a few list points. If we want to just change the color of the FIRST letter in each list, this is 
+what you will have to do:
+
+li::first-letter {
+    color: coral;
+    font-weight: bold;
+    font-size: 20px
+}
+
+// BELOW: will make the first line of text have an underline
+
+li::first-line {
+    color: black;
+    text-decoration: underline;
+}
+// BELOW: will change the style of the bullet point of the li
+li::marker {
+    color: cornflowerblue;
+    content: '>>'
+}
+
+//BELOW: will change the style of when you click, hold, and drag the text, it will change the color and such
+
+li::selection {
+    color:brown;
+    background-color: antiquewhite;
+}
+
+.(classname)::before {
+
+}
+
+.(classname)::after {
+
+}
+
+
+
+// Web-link States
+
+
+:link
+:visited
+
+
+// THIS IS THE RIGHT WAY TO WRITE
+LVHA
+link, visited, hover, active
