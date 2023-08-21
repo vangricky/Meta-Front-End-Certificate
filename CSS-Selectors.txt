@@ -115,3 +115,35 @@ li::selection {
 // THIS IS THE RIGHT WAY TO WRITE
 LVHA
 link, visited, hover, active
+
+
+
+
+
+
+
+
+// EFFECT
+change of result of consequence or cause
+
+
+//Animation : Effect 
+graphics in motion transitioning over time
+
+//GIFs
+Graphics Interchange Form
+
+// Ellipses Property 
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis; //the leftover text will be displayed only when you HOVER over it.
+text-overflow: clip;
+word-wrap: break-word;
+text-shadow: 0 0 30px green; ( x-coordinate, y-coordinate, blur radius, shadow color)
+
+
+// Transforms and Transitions Elements
+
+transform: rotate(0deg);
+transition: .3s;
+transform: skewX(20deg); //rotate the text in x axis
