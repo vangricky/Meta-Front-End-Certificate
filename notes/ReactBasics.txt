@@ -79,3 +79,130 @@ export { addTwo, addThree };
                                         3. Follow instructions after installing
 
 
+Terms: 
+SPAs (Single Page Applications)
+
+
+
+React:
+- build and compose components
+- high performance rendering -> 
+- Component rendering
+
+
+// JavaScript Refresher
+function multiply(num1) {
+    console.log(num1 * num1); // 100
+}
+multiply(10);
+                                            // REACT USES 2 TYPES OF COMPONENTS!!!!!
+// Functional Components
+// Class Components 
+
+// Functional Components
+Must be used as a JSX element
+
+    function Welcome() {
+        return <h1>"Hello"</h1>
+    };
+
+
+// Class Components
+    class Welcome extends React.Component
+    {
+        render() {
+            return <h1>"Hello"</h1>
+        };
+    };
+
+
+
+
+
+
+
+
+
+more example on where to put your completed component:
+
+<div id="root">
+    <!-- This element's contents will be
+        replaced with your component. -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+JSX is used in React
+JSX is pretty similar to HTML. Looks so similar.
+It combines HTML and JavaScript.
+
+To create a component.
+1. Make a new .js file, name it (for example) 
+    Heading.js
+
+    - The first letter must be capitalized BECAUSE React knows normal js as the lowercase letter.
+    - capitalizing first letter in .js file will help React know its a component
+
+
+
+TERM:
+Transpiling: interpreting a programming language and translating it to a specific target language
+
+
+
+
+
+
+
+
+
+
+//              Creating React Project (again)
+1. Open terminal
+2. type 'npm init react-app .'
+        (the . at the end of line two, instructs vscode to run this command in the CURRENT folder)
+3. wait for app to build
+4. Then, type : npm start
+
+Go into the src folder in your newly created react-app
+Delete everything in the function App() {
+
+}
+
+
+
+
+
+
+                                        // The React Project structure
+In this video, we will go over the following:
+1. Explain React's default folder structure
+2. Outline the benefits of React's folder structure
+3. Customize React's folder structure
+4. Explain the benefits of planning folder use
+
+So, when we do the 'npm init react-app .', we created a react project, itll take some time to finish downloading
+all components and files for the default project.
+
+Then, after it is finished downloading everything. We see that we have the project file.
+In that project file we have more folders and files.
+The main FOLDERS we have are:
+- node_modules
+- public
+- src
+
+In the 'node modules' folder: it has all the repositories for all the modules in the react app.
+In the 'public' folder: it contains the assets that will be displayed to the user
+    The most important file in this 'public' folder, is the 'index.html' file.
+In the 'src' folder: it contains all the essential files to make sure the app runs and functions
+    As a React developer, we will be using this folder so much more!
+    
+MOST IMPORTANT FILE IS: index.js 
