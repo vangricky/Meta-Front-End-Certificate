@@ -24,3 +24,58 @@ ah, yes, they are:
 complex UI's from small and isolated pieces of JS code!
 
 We will learn how to build components, how to structure and customize React projects!
+
+
+// MODULE EXPORTS
+1. Default Exports 
+2. Named Exports
+
+
+// Default Exports
+- You can have ONE DEFAULT EXPORT per JavaScript module
+'export default function'
+'export default'
+------------------------
+function addTwo(a, b) {
+    console.log(a + b);
+}
+
+export default addTwo;
+------------------------
+
+// Named Exports
+- You can export as many times as you want
+
+------------------------
+export function addTwo(a, b) {
+    console.log(a + b);
+}
+
+export function addThree(a + b + c) {
+    console.log(a + b + c);
+}
+-------------------------
+
+Another way to do named exports are:
+
+-------------------------
+
+function addTwo(a, b) {
+    console.log(a + b);
+}
+
+function addThree(a + b + c) {
+    console.log(a + b + c);
+}
+
+export { addTwo, addThree };
+
+-------------------------
+
+
+                                        // STEPS TO START A REACT Project
+                                        1. Open terminal
+                                        2. type: 'npm init react-app firstapp'
+                                        3. Follow instructions after installing
+
+
