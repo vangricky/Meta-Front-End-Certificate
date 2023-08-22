@@ -1,0 +1,34 @@
+// HTML
+
+What we will go over in this section:
+1. Identify common errors in programming
+2. Explain good practices to avoid making errors
+
+Always check for mistyped things.
+
+
+- DO NOT name a class or id with a NUMBER
+- 
+
+//Rule-based error
+// Knowledge based errors
+//Common errors
+
+
+- Write CSS in short hand syntax
+for example: margin: 0 0 0 0;
+
+use this for every css:
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+//          HANDLING errors
+
+
+- CSS handles errors differently
+- This code does not break or stop executing
+- Code with errors is ignored
