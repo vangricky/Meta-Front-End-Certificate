@@ -32,3 +32,29 @@ use this for every css:
 - CSS handles errors differently
 - This code does not break or stop executing
 - Code with errors is ignored
+
+
+
+
+//                Browser-specific CSS
+1. Explain interactivity of CSS with other browsers
+2. Explain how to add code to CSS files to endure compatibility
+3. Identify specialized websites to check the validity of your code          
+
+websites:
+1. modernizer
+2. reset.css
+3. normalize.css
+
+
+type in css.
+@media screen and (-webkit-device-pixel-ratio:0) and (min-resolution:.001dpcm)
+{ selector( property:value; )}
+
+
+
+// UI TESTING
+
+1. Automated user acceptance testing 
+2. Cross-device testing: tests layout and behavior across different devices
+3. Visual regression testing
