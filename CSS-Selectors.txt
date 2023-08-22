@@ -147,3 +147,94 @@ text-shadow: 0 0 30px green; ( x-coordinate, y-coordinate, blur radius, shadow c
 transform: rotate(0deg);
 transition: .3s;
 transform: skewX(20deg); //rotate the text in x axis
+
+
+
+//              CSS Animation
+1. Animation Property
+2. @Keyframe rule
+
+Keyframe syntax:
+@keyframes animationname {keyframes-selector {css-styles;}}
+    or
+@keyframes animationname {
+    from { color: blue; }
+    to { color: red; }
+}
+
+//  ANIMATION PROPERTY:
+animation: name duration timing-function delay iteration-count direction fill-mode play-state
+    example:
+
+animation:
+div {
+    animation: myanimation 3s infinite;
+}
+
+@keyframes cycle {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360def); }
+}
+
+//     HOW TO @keyframes
+1. in css, type:
+    @keyframes (make a variable, name it anything you want) {
+        from {
+            color:red;
+        }
+        to {
+            color: blue;
+        }
+    }
+
+2. in the element you want, type:
+span {
+    animation: (name of variable you made in step 1) (then click space bar, then the second value will be 'DURATION') (click space bar, then 3rd value will be 'ITERATION COUNT', so it'll run 3 times! Could also write 'infinite' in third value)
+}
+
+
+
+//  MORE EXAMPLE IS TO USE PERCENTAGES , UP TO 100% , so like:
+
+@keyframes highlighttext {
+    0% {
+        color: red;
+    }
+    50% {
+        color: green;
+        font-size: 10px
+    }
+    100% {
+        color: blue;
+    }
+}
+
+
+
+// ANIMATION PROPERTIES:
+/*
+animation-name:             none 
+animation-duration:         0s 
+animation-timing-function:  ease 
+animation-delay:            0s 
+animation-iteration-count:  1 
+animation-direction:        normal 
+animation-fill-mode:        none 
+animation-play-state:       running 
+animation-timeline:         auto 
+*/
+
+
+//LOADING BAR ANIMATION
+
+@keyframes loader {
+    from { width: 50px; }
+    to   { width: 200px; }
+}
+
+.box {
+    background-color: lightcoral; 
+    width: 50px; 
+    height: 50px;
+    animation: loader 3s ease 1;
+}
