@@ -1,0 +1,26 @@
+//React Basics
+
+//Things I will learn:
+1. Develop familiarity with the React.js library
+2. Explore state and state-management
+3. Navigation and asserts in React.js
+
+//Components
+- Components combine with different components to create a full website.
+- React is popular because its great at composing and building components to make websites.
+- We will be working with state with the React app.
+- State: The values of all variables your app is working with at any given point.
+
+// React Basics
+In this course, you will be doing these things:
+- Styling React Apps
+- Event Handling
+- Navigation and assets 
+- Portfolio Project
+
+Everything revolves around components. COMPONENTS, COMPONENTS, COMPONENTS!
+...what are components?...
+ah, yes, they are:
+complex UI's from small and isolated pieces of JS code!
+
+We will learn how to build components, how to structure and customize React projects!
