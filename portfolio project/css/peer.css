@@ -1,0 +1,69 @@
+body {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    background-color: brown;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.429);
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer > div {
+    margin-right: 20px;
+}
+
+.banner {
+    background-color: rgba(165, 42, 42, 0.465);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.cards article {
+    border: 2px dotted rgba(165, 42, 42, 0.289);
+    background-color: rgba(165, 42, 42, 0.093);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 10px;
+}
+
+.image {
+    text-align: center;
+}
