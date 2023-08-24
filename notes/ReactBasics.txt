@@ -204,5 +204,79 @@ In the 'public' folder: it contains the assets that will be displayed to the use
     The most important file in this 'public' folder, is the 'index.html' file.
 In the 'src' folder: it contains all the essential files to make sure the app runs and functions
     As a React developer, we will be using this folder so much more!
-    
+
 MOST IMPORTANT FILE IS: index.js 
+
+
+
+
+
+
+
+
+
+
+
+
+//                          HOW TO PROPERLY MAKE A REACT APP, this shall be the final tutorial.. I think...
+
+1. Open terminal
+2. type 'npm init react-app (name of project)'
+3. Press enter and wait until folder is created
+4. Go into src folder and make a new folder for your components called 'components'
+5. make .js files in the components folder, naming them according to your desires.
+    REMEMBER, "CAPITALIZE" the first letter in the .js file in the components folder!!!!!!
+
+
+
+
+
+
+
+        // IMPORTING components into your file!
+
+type : 'import (component name) from './App' (write the dash then whereever the component is in)
+example: import App from './App'
+
+
+
+
+
+
+                                        //COMPONENT USE AND Styling
+
+                                        //PROPS
+
+
+import React from 'react';
+
+export function App(props) {
+    return (
+        <h1>{props.title}</h1>
+    );
+};
+
+
+
+
+okay, example... idk how props work yet but.
+but, these two files below is how you pass in the props.
+
+//Index.js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+import App from './App.js'
+
+ReactDOM.createRoot(
+    document.querySelector('#root')
+).render(<App title="Welcome" />)
+
+//App.js
+import React from 'react;
+
+export function App(props) {
+    return (
+        <h1>{props.title}</h1>
+    );
+};
