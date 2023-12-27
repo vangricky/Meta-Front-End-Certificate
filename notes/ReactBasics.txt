@@ -72,6 +72,12 @@ export { addTwo, addThree };
 
 -------------------------
 
+HOW TO IMPORT MODULE USING 'DEFAULT EXPORT':
+type: " import addTwo from "/.addTwo"; " into the top of the new module(file), for example 'multiplication.js'
+
+HOW TO IMPROT MODULE USING 'NAMED EXPORT':
+type: " import { addTwo } from "./addTwo"; " into the top of the new module(file)
+
 
                                         // STEPS TO START A REACT Project
                                         1. Open terminal
