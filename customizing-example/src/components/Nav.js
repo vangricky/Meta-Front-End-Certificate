@@ -5,7 +5,7 @@ function Nav() {
                 <li>Home</li>
                 <li>Articles</li>
                 <li>About</li>
-                <li>Contacts</li>
+                <li>Contact</li>
             </ul>
         </nav>
     );
