@@ -79,6 +79,7 @@ HOW TO IMPROT MODULE USING 'NAMED EXPORT':
 type: " import { addTwo } from "./addTwo"; " into the top of the new module(file)
 
 
+
                                         // STEPS TO START A REACT Project
                                         1. Open terminal
                                         2. type: 'npm init react-app firstapp'
@@ -121,7 +122,21 @@ Must be used as a JSX element
         };
     };
 
+Before continuing, you must need to know a little more about 'JSX' (JavaScript XML) XML stands for: Extensible Markup Langauge. 
+So, I will give you an example. Pretend we have a module (file) called 'App.js':
 
+App.js:
+function App() {
+    return (
+        <div className='App'>
+            <h1>Hello React.</h1>
+        </div>
+    );
+}
+export default App
+
+
+Above is JSX. Well, line 132 is, I think everything is too. Looks like HTML, but isnt. 
 
 
 
@@ -158,6 +173,28 @@ To create a component.
     - capitalizing first letter in .js file will help React know its a component
 
 
+Now, lets practice writing your first component.
+For example, we have a new file called 'Heading.js'
+It is a JavaScript file, as it has '.js' at the end of the file.
+Below, is going to be what goes in the Heading.js file.
+
+
+function Heading() {
+    let title = "This is a specific heading";
+    return (
+        <h1>{title}</h1>
+    );
+};
+
+
+Alright, so above, we just wrote our first official component. We start with 'function', then name of function. Then add parenthesis to 
+make it a full-on function, then type curly braces and enter the code in-between the curly braces. 
+We then write 'let', then made title the variable with "This is a specific heading" saved in the variable.
+Then we wrote 'return', with parenthesis and wrote our xml in there. 
+As we can see, title is in the h1, but it has curly braces surrounding it, this must be! -for it to display what's in the variable.
+If we do not add the curly braces around title, it will display "title".
+
+
 
 TERM:
 Transpiling: interpreting a programming language and translating it to a specific target language
@@ -176,12 +213,14 @@ Transpiling: interpreting a programming language and translating it to a specifi
 2. type 'npm init react-app .'
         (the . at the end of line two, instructs vscode to run this command in the CURRENT folder)
 3. wait for app to build
-4. Then, type : npm start
+4. Then, type: npm start
 
 Go into the src folder in your newly created react-app
 Delete everything in the function App() {
 
 }
+
+Refer to the video in week 1 "Creating react component" if you need to review how to start a brand new react project.
 
 
 
@@ -198,7 +237,7 @@ In this video, we will go over the following:
 So, when we do the 'npm init react-app .', we created a react project, itll take some time to finish downloading
 all components and files for the default project.
 
-Then, after it is finished downloading everything. We see that we have the project file.
+Then, after it has finished downloading everything. We see that we have the project files.
 In that project file we have more folders and files.
 The main FOLDERS we have are:
 - node_modules
