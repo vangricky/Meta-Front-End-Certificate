@@ -280,6 +280,16 @@ MOST IMPORTANT FILE IS: index.js
 
         // IMPORTING components into your file!
 
+DISTIGUISHING BETWEEN USING "DEFAULT" OR "NAMED" EXPORTS
+Use Default Exports (export default ...) when the function is the same name as the file name.
+Use Named Exports when you want function name to be different between file name.
+
+T E R M S to remember:
+1. Component: Small piece of functionality
+2. Module: Series of components
+
+IMPORT:
+
 type : 'import (component name) from './App' (write the dash then whereever the component is in)
 example: import App from './App'
 
@@ -325,3 +335,43 @@ export function App(props) {
         <h1>{props.title}</h1>
     );
 };
+
+Functional Components: Reusable blocks of code that can be reused
+
+
+
+
+
+
+                [Component Use and Styling: Principles of Components: Props] PROPS: similar to functions w/ parameters
+
+                For example:
+                export function App(props) {
+                    return (
+                        <h1>{props.title}</h1>
+                    )
+                }
+
+BEFORE going into learning React Props, let's revisit 'JavaScript Ojects'
+JavaScript Object
+- Variable that can contain many values
+- Groups related data of different types
+- Contain object properties
+
+For Example, in this js object:
+const fruit = {type:"Apple", quantity: 500, color: "green"};
+
+These objects are 'key:value' pairs.
+We can call specific things of fruit by typing:
+console.log(fruit.type)
+
+Now with that review, let's learn about Props.
+
+PROPS
+- Allows you to pass data between components
+- Arguments are passed like HTML attributes
+- Uses the keyword 'props'
+
+When 2 components communicate with each other, the component sending the prop data is known as the PARENT,
+and the component receiving the data is known as the CHILD.
+
