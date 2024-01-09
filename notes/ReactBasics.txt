@@ -375,3 +375,59 @@ PROPS
 When 2 components communicate with each other, the component sending the prop data is known as the PARENT,
 and the component receiving the data is known as the CHILD.
 
+
+VIDEO: Using props in components 
+In this video, we will explore 'pass props to and within a component' and 'pass props using functions'
+
+Nav Component (how to make a nav using react):
+function Nav() {
+    return (
+        <nav className="main-nav">
+            <ul>
+                <li>Home</li>
+                <li>Articles</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    );
+}
+
+export default Nav;
+
+If a component is getting IMPORTED into a file, the IMPORTED files are the child component. The file that it's getting imported to, is the PARENT component.
+
+
+VIDEO: Introducing JSX
+- Explain the concept of JSX Styling
+- Understand how to mix coding languages
+Expressive. JSX can be expressive.
+JSX allows devs to write html directly inside JavaScript code.
+For example:
+
+    function Nav(props) {
+        return (
+            <nav className="main-nav">
+                <ul>
+                    <li>{props.first}</li>
+                    <li>{props.second}</li>
+                    <li>{props.third}</li>
+                    <li>{props.fourth}</li>
+                </ul>
+            </nav>
+        );
+    }
+
+    export default Nav;
+
+
+JSX return statement:
+
+function Header() {
+    return <h1>Welcome</h1>     <---- the JSX return statement
+}
+export default Header;
+
+The return statements can be thought of as the area of expressive syntax that allows you to write regular HTML code as you'd like to have it in your rendered app.
+
+Use 'className' in the JSX, to STYLE the component. Just like how you would add the 'class' attribute in HTML to link it to the CSS file.
