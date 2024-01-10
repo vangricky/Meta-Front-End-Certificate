@@ -431,3 +431,76 @@ export default Header;
 The return statements can be thought of as the area of expressive syntax that allows you to write regular HTML code as you'd like to have it in your rendered app.
 
 Use 'className' in the JSX, to STYLE the component. Just like how you would add the 'class' attribute in HTML to link it to the CSS file.
+
+
+READING: JSX syntax and the arrow function
+
+Function Expressions: We are going to compare how to write a traditional function declaration vs. function 'expression'
+Example:
+
+TRADITIONAL WAY OF WRITING IT:
+
+function Nav(props) {
+    return (
+        <ul>
+            <li>{props.first}</li>
+        </ul>
+    )
+}
+
+Function EXPRESSION WAY OF WRITING IT:
+
+const Nav = function(props) {
+    return (
+        <ul>
+            <li>{props.first}</li>
+        </ul>
+    )
+}
+
+OR . . . . . . . .
+
+We can code components as ARROW FUNCTIONS (DUH DUH DUUUUN):
+(ahem... recap, arrow functions are a core feature of the ES6 version of JavaScript. One of it's benefits is its shorter syntax.)
+
+Example code of Nav function expression written as an arrow function:
+
+const Nav = (props) => {
+    return (
+        <ul>
+            <li>{props.first}</li>
+        </ul>
+    )
+}
+
+Arrow functions are used extensively in JSX in React, and getting used to their syntax and being able to "mentally parse" it as you read it is an important skill to have and helps you get better at writing React apps.
+
+VIDEO: Embedded JSX Expressions
+
+Review: JSX Example
+const result = <p>Hello, World!</p>;
+
+Now, lets get to learning and talking about Embedded Expressions.
+Embedded Expressions allows JavaScript values to be inserted into HTML of React element.
+
+Example: 
+    Let's say you need to output the person's name in a specific format. 
+    To do this, you can first create a function named format name that will return the first name and surname with a space character between them.
+
+
+Making the Function:
+
+function formatName(firstname, lastname) {
+    return firstname + " " + lastname;
+}
+
+Embedded Function Outputs:
+
+const result = <p>{ formatName("Jane", "Wilson") }</p>;
+
+
+Expressions in HTML Attributes:
+
+const url = "photo.png";
+
+const result = <img src={url}></img>;
