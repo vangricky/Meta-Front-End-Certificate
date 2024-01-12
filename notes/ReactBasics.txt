@@ -504,3 +504,77 @@ Expressions in HTML Attributes:
 const url = "photo.png";
 
 const result = <img src={url}></img>;
+
+
+READING: Ternary Operators and Functions
+
+You can use 'if...else' condition in react by using Ternary Operator.
+Ternary Operator uses two characters: the first one is the question mark. ?
+To the left of the ? character, you put a condition that you'd like to check for.
+    For example:
+                name == 'Bob' ?
+
+That's the first part, the second part is " : ".
+The colon is placed after the question mark character.
+Now the code above looks like this:
+                name == 'Bob' ? :
+
+Now we know the characters for a Ternary operator, but we aren't done.
+We still need to add the RETURN values. In other words
+if name == 'Bob' is true... I want to return the words "Yes, it is Bob!". 
+Otherwise I want to return the words "I don't know this person."
+So, to do that, this is how:
+                name == Bob ? "Yes, it is Bob" : "I don't know this person";
+
+Now, we know the ternary operator. It's just shorthand syntax that can be used as
+a replacement for the 'if' statement.
+
+Another example:
+                let name = "Bob";
+                name == "Bob" ? console.log("Hello, Bob") : console.log("Hello, Friend.")
+
+
+
+Using Ternary Expressions in JSX:
+For Example:
+                function Example() {
+                    return (
+                        <div className="heading">
+                            <h1>{Math.random() >= 0.5 ? "Over 0.5" : "Under 0.5"}</h1>
+                        </div>
+                    );
+                };
+
+
+
+
+Using Function Calls in JSX:
+For Example:
+                function Example2() {
+                    return (
+                        <div className="heading">
+                            <h1>Here's a random number from 0 to 10: 
+                                { Math.floor(Math.random() * 10) + 1 }
+                            </h1>
+                        </div>
+                    );
+                };
+
+
+Function Expression:
+                const getRandomNum = function() {
+                    return Math.floor(Math.random() * 10) + 1
+                };
+
+Function Declaration:
+                function getRandomNum() {
+                    return Math.floor(Math.random() *10) + 1
+                };
+
+
+
+VIDEO: Embedding in Attributes
+We will learn:
+- Embedding a JS expression in an attribute
+- Utilizing additional assets by importing components
+
