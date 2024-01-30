@@ -578,3 +578,15 @@ We will learn:
 - Embedding a JS expression in an attribute
 - Utilizing additional assets by importing components
 
+
+
+ VIDEO: Syntax For Handlers
+ Event: Click a button
+ Event Handler: onClick
+Action: Open's menu
+
+In this video, I will be able to:
+1. Describe event handling syntax differences between HTML and React
+2. Explain HTML function call and React component inclusion
+
+Example: If you were a React developer and need to create a button that will trigger an event when user clicks on it.
