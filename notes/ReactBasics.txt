@@ -673,3 +673,58 @@ export default App;
 VIDEO: User events
 
 onClick={handleClick}
+
+
+
+
+WEEK 2: Part 2:
+
+VIDEO: Parent-Child Data Flow 
+
+Items that it will cover in this video:
+1. Describe parent-child data flow
+2. Understand Data Hierarchy of/in React
+
+Understanding Parent / Child components.
+
+So, ill write an example code below:
+
+function Promo() {                                                  <------ Parent Component
+    return (
+        <div>
+        <PromoHeading />                                            <------ Child Component
+        </div>
+    )
+}
+
+export default Promo;
+
+
+How to pass data from the parent to the child component:
+
+const data = {
+    heading: "99% off all items!"
+    callToAction: "Everything Must Go!"
+}
+
+function Promo() {
+    return (
+        <div>
+        <PromoHeading
+        heading={data.heading}
+        callToAction={data.callToAction}
+        />
+        </div>
+    )
+}
+
+
+above, that was in the Promo.js component file, now lets check out the child file, called PromoHeading.js :
+
+function PromoHeading(props) {
+    return (
+        <h1>{props.heading}</h1>
+        <h2>{props.callToAction}</h2>
+    )
+}
+export default PromoHeading;
